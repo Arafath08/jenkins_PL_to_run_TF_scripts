@@ -25,5 +25,5 @@ variable "tag_name" {
 
 variable "ami_id" {
   description = "AMI for Amazon 2 linux Ec2 instance"
-  default     = "data.aws_ami.web_ami.id"
+  default     = "data.aws_ami.amazon-2.id"
 }

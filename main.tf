@@ -54,18 +54,13 @@ tags= {
   }
 }
 
-data "aws_ami" "web_ami" {
-  most_recent      = true
-  owners           = ["amazon"]
+# Data Block
+data "aws_ami" "amazon-2" {
+  most_recent = true
 
   filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-*-gp2"]
+    name = "name"
+    values = ["amzn2-ami-hvm-*-x86_64-ebs"]
   }
-
-  filter {
-    name   = "root-device-type"
-    values = ["ebs"]
-  }
-
+  owners = ["amazon"]
 }
