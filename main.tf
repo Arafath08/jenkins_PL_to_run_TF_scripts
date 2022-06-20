@@ -60,7 +60,7 @@ data "aws_ami" "web_ami" {
 
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm-*"]
+    values = ["amzn2-ami-hvm-*-gp2"]
   }
 
   filter {
