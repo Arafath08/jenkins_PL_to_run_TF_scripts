@@ -23,7 +23,3 @@ variable "tag_name" {
   default     = "my-ec2-instance"
 }
 
-variable "ami_id" {
-  description = "AMI for Amazon 2 linux Ec2 instance"
-  default     = "data.aws_ami.amazon-2.id"
-}
